@@ -25,4 +25,4 @@ jobs:
     - name: Build
       run: dotnet build --no-restore --configuration Release
     - name: Publish
-      run: dotnet nuget push /home/runner/work/PackageTest/PackageTest/NugetTest/bin/Debug/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/jmcginty/index.json
+      run: dotnet nuget push /home/runner/work/PackageTest/PackageTest/NugetTest/bin/Release/*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/jmcginty/index.json
