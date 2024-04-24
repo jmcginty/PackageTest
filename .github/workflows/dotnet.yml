@@ -3,6 +3,8 @@
 
 name: .NET
 
+permissions: write-all
+
 on:
   push:
     branches: [ "main" ]
